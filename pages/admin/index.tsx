@@ -14,7 +14,7 @@ import Head from 'next/head'
 import { useEnvironmentCtx } from 'providers/EnvironmentProvider'
 import * as splToken from '@solana/spl-token'
 import { useState } from 'react'
-import { Placeholder } from 'pages'
+import Placeholder from "pages"
 import { pubKeyUrl, shortPubKey } from 'common/utils'
 import { FaQuestion } from 'react-icons/fa'
 import { useStakePoolsByAuthority } from 'hooks/useStakePoolsByAuthority'
@@ -212,13 +212,11 @@ function Admin() {
                       className="h-[300px] cursor-pointer rounded-lg bg-white bg-opacity-5 p-10 transition-all duration-100 hover:scale-[1.01]"
                       onClick={() => {
                         window.open(
-                          `/admin/${
-                            stakePool.stakePoolMetadata?.name ||
-                            stakePool.stakePoolData.pubkey.toString()
-                          }${
-                            environment.label !== 'mainnet-beta'
-                              ? `?cluster=${environment.label}`
-                              : ''
+                          `/admin/${stakePool.stakePoolMetadata?.name ||
+                          stakePool.stakePoolData.pubkey.toString()
+                          }${environment.label !== 'mainnet-beta'
+                            ? `?cluster=${environment.label}`
+                            : ''
                           }`,
                           '_blank',
                           'noopener,noreferrer'
