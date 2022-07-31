@@ -1,0 +1,16 @@
+.SocialLink{
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    display: flex;
+    flex-direction: column;
+}
+.i{
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 20px 1px 400px -33px rgba(0,0,0,0.82);
+    -webkit-box-shadow: 20px 1px 400px -33px rgba(0,0,0,0.82);
+    -moz-box-shadow: 20px 1px 400px -33px rgba(0,0,0,0.82);
+    margin:5px;
+    color:rgba(120, 132, 172, 0.671);
+}

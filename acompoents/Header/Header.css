@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Maven+Pro&display=swap');
+
+
+body{
+    position: relative;
+}
+@media screen and (min-width:1200px) {
+    .person{
+        position: absolute;
+        bottom: 0;
+    }
+}
+/* .HeaderHome .text{
+    padding: 5px;
+    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Kaushan Script', cursive;
+    box-shadow: 20px 1px 212px 130px rgba(255,255,255,0.82);
+    -webkit-box-shadow: 20px 1px 212px 130px rgba(255,255,255,0.82);
+    -moz-box-shadow: 20px 1px 212px 130px rgba(255,255,255,0.82);
+} */

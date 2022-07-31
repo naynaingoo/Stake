@@ -1,0 +1,12 @@
+.navbarNav{
+    display: flex;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between
+}
+.container{
+    width:90%;
+    margin:auto;
+}
