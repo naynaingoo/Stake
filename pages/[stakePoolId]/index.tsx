@@ -581,7 +581,7 @@ function Home() {
         ) : (
           !wallet.connected && (
             <div
-              className={`mx-5 hidden mb-5 bg-lime-900 cursor-pointer rounded-md border-[1px]  p-4 text-center text-lg font-semibold ${stakePoolMetadata?.colors?.accent &&
+              className={`mx-5 mb-5 bg-lime-900 cursor-pointer rounded-md border-[1px]  p-4 text-center text-lg font-semibold ${stakePoolMetadata?.colors?.accent &&
                 stakePoolMetadata?.colors.fontColor
                 ? ''
                 : 'border-yellow-500 bg-yellow-500 bg-opacity-40'
@@ -818,7 +818,7 @@ function Home() {
               </div>
             </div>
           )}
-        <div className="my-2 mx-5  grid grid-cols-1 gap-20 relative md:grid-cols-2 mt-20">
+        <div className="my-2 mx-5  grid grid-cols-1 gap-10 relative md:grid-cols-2 mt-20">
           <div className="imgs absolute">
             <div className="USimg cursor-pointer" onClick={() => {
               if (stakedSelected.length === 0) {

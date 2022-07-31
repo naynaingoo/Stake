@@ -22,7 +22,7 @@ function HeaderHome() {
           Everything could have been run, if a mistress in fury, angry policemen, a tough judge, and the fury of summer had not decided otherwise…
           </p> */}
           <div className="img w-100 d-flex justify-content-center mt-20">
-            <Image src={headerImg} width={900} height={550} className='img-fluid' alt="" />
+            <Image src={headerImg} width={1100} height={700} className='img-fluid' alt="" />
             {/* <img className='img-fluid' src={CSoon} alt="" /> */}
           </div>
         </div>

@@ -73,7 +73,7 @@ export const stakePoolMetadatas: StakePoolMetadata[] = [
     name: 'streetscientists',
     displayName: 'STREET SCIENTISTS',
     stakePoolAddress: new PublicKey(
-      'wNu68Jf3kZFBaRzhWB8nsup8BNExz5DknpMuNeiui33'
+      'GuQBPD1jf1Xin8S3whPeqfo5YiZyPRLd3SSN3yBVuZc7'
     ),
     receiptType: ReceiptType.Original,
     tokenStandard: TokenStandard.NonFungible,

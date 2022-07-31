@@ -14,12 +14,13 @@ import { useUTCNow } from 'providers/UTCNowProvider'
 import { contrastColorMode } from './utils'
 
 export const StyledWalletButton = styled(WalletMultiButton)`
-  color: rgb(55, 65, 81, 1);
-  &:hover {
-    background: none !important;
-  }
+  // color: rgb(55, 65, 81, 1);
+  // &:hover {
+  //   background: none !important;
+  // }
   .wallet-adapter-button {
     padding: 0px;
+    color:#fff;
   }
 `
 export const TitleText = styled('div')`
@@ -71,23 +72,22 @@ export const Header = () => {
             target="_blank"
             href={
               stakePoolMetadata?.websiteUrl ||
-              `/${
-                ctx.environment.label !== 'mainnet-beta'
-                  ? `?cluster=${ctx.environment.label}`
-                  : ''
+              `/${ctx.environment.label !== 'mainnet-beta'
+                ? `?cluster=${ctx.environment.label}`
+                : ''
               }`
             }
             className="flex cursor-pointer text-xl font-semibold text-white hover:text-gray-400"
           >
             {stakePoolMetadata?.imageUrl ? (
               <div className="flex flex-row">
-                  <img
+                <img
                   className="flex h-[35px] flex-col"
                   src={stakePoolMetadata?.imageUrl}
                 />
                 <span className="ml-5 mt-1 flex flex-col">
                   {stakePoolMetadata?.displayName} Staking
-                </span> 
+                </span>
               </div>
             ) : (
               <TitleText className="flex hidden items-center justify-center gap-2">
@@ -103,7 +103,7 @@ export const Header = () => {
           </a>
           {ctx.environment.label !== 'mainnet-beta' && (
             <div className="cursor-pointer rounded-md hidden bg-[#9945ff] p-1 text-[10px] italic text-white">
-             {ctx.environment.label}
+              {ctx.environment.label}
             </div>
           )}
           {ctx.environment.label !== 'mainnet-beta' ? (
@@ -128,10 +128,9 @@ export const Header = () => {
               <div
                 onClick={() =>
                   router.push(
-                    `/admin${
-                      ctx.environment.label !== 'mainnet-beta'
-                        ? `?cluster=${ctx.environment.label}`
-                        : ''
+                    `/admin${ctx.environment.label !== 'mainnet-beta'
+                      ? `?cluster=${ctx.environment.label}`
+                      : ''
                     }`
                   )
                 }
